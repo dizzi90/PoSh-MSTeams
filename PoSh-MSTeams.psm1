@@ -1,6 +1,6 @@
-$function = Get-ChildItem -Path "$PSScriptRoot\Function"
+$function = Get-ChildItem -Path $PSScriptRoot\Function
 foreach ($function in $function)
 {
-	. $function.PSPath
-	Export-ModuleMember -Function $function.Name
+	. $function.FullName
+	Export-ModuleMember -Function $function.BaseName
 }
