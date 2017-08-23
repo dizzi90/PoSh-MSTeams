@@ -1,0 +1,6 @@
+FROM microsoft/powershell:ubuntu16.04
+
+LABEL readme.md="https://github.com/dizzi90/PoSh-MSTeams/blob/master/README.md"
+LABEL description="This Dockerfile will install the latest release of Powershell Core and fetch appropriate dependencies."
+
+CMD ["powershell","-Command { Install-Module -Name Pester -Repository PSGallery -Scope CurrentUser }"]
