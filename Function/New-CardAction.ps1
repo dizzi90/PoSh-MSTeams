@@ -1,3 +1,4 @@
+#!/usr/bin/env powershell
 function New-CardAction
 {
 
@@ -29,9 +30,9 @@ function New-CardAction
 			'OpenUri'
 			{
 				$target	= @{ os = 'default' ; uri = $DefaultUri }
-				if ($iOsUri)			{ $target	+= @{ os = 'iOS'		; uri = $iOsUri		} }
-				if ($AndroidUri)		{ $target	+= @{ os = 'android'	; uri = $AndroidUri	} }
-				if ($WindowsUri)		{ $target	+= @{ os = 'windows'	; uri = $DefaultUri	} }
+				if ($iOsUri)		{ $target	+= @{ os = 'iOS'		; uri = $iOsUri		} }
+				if ($AndroidUri)	{ $target	+= @{ os = 'android'	; uri = $AndroidUri	} }
+				if ($WindowsUri)	{ $target	+= @{ os = 'windows'	; uri = $DefaultUri	} }
 				$action.targets = $target
 			}
 			'HttpPost'

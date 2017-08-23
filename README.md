@@ -1,4 +1,4 @@
-# PoSh-MS-Teams
+# PoSh-MSTeams
 
 ## Status: **alpha**
 

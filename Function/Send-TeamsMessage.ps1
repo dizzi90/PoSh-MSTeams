@@ -78,7 +78,7 @@ function Send-TeamsMessage
 	try
 	{
 		$apiResponse = Invoke-RestMethod @parameter
-		if ($apiResponse -eq 1)	{ $true }
+		if ($apiResponse -eq 1) { $true }
 		else
 		{
 			$false
