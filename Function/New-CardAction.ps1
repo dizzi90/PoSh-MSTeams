@@ -7,18 +7,18 @@ function New-CardAction
 		# Which type of action is defined by the parameters used.
 		[Parameter(Mandatory)]	[string]	$Name,
 
-		[Parameter(ParameterSetName='OpenUri',Mandatory)]		[string]	$DefaultUri,
-			[Parameter(ParameterSetName='OpenUri')]				[string]	$iOsUri,
-			[Parameter(ParameterSetName='OpenUri')]				[string]	$AndroidUri,
-			[Parameter(ParameterSetName='OpenUri')]				[string]	$WindowsUri,
+		[Parameter(ParameterSetName='OpenUri',Mandatory)]		[string]		$DefaultUri,
+			[Parameter(ParameterSetName='OpenUri')]				[string]		$iOsUri,
+			[Parameter(ParameterSetName='OpenUri')]				[string]		$AndroidUri,
+			[Parameter(ParameterSetName='OpenUri')]				[string]		$WindowsUri,
 
-		[Parameter(ParameterSetName='HttpPost',Mandatory)]		[string]	$Target,
-		[Parameter(ParameterSetName='HttpPost',Mandatory)]		[string]	$Body,
-			[Parameter(ParameterSetName='HttpPost')]			[string]	$Headers,
-			[Parameter(ParameterSetName='HttpPost')]			[string]	$BodyContentType,
+		[Parameter(ParameterSetName='HttpPost',Mandatory)]		[string]		$Target,
+		[Parameter(ParameterSetName='HttpPost',Mandatory)]		[string]		$Body,
+			[Parameter(ParameterSetName='HttpPost')]			[string]		$Headers,
+			[Parameter(ParameterSetName='HttpPost')]			[string]		$BodyContentType,
 
-		[Parameter(ParameterSetName='ActionCard',Mandatory)]	[PSObject]	$Action,
-			[Parameter(ParameterSetName='ActionCard')]			[PSObject]	$ActionInput
+		[Parameter(ParameterSetName='ActionCard',Mandatory)]	[PSObject[]]	$Action,
+			[Parameter(ParameterSetName='ActionCard')]			[PSObject[]]	$ActionInput
 	)
 	process
 	{

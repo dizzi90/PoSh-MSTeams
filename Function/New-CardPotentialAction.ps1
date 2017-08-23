@@ -6,8 +6,8 @@ function New-CardPotentialAction
 	(
 		[Parameter(Mandatory)]	[String]		$Type,
 		[Parameter(Mandatory)]	[String]		$Name,
-		[Parameter()]			[psobject[]]	$Action,
-		[Parameter()]			[psobject[]]	$ActionInput
+		[Parameter()]			[psobject[]]		$Action,
+		[Parameter()]			[psobject[]]		$ActionInput
 	)
 	process
 	{
