@@ -12,7 +12,7 @@ function New-CardSection
 		[Parameter()]	[String]			$Title,
 		[Parameter()]	[Switch]			$StartGroup,
 		[Parameter()]	[PSCustomObject]	$HeroImage,
-		[Parameter()]	[String]			$Text,
+		[Parameter()]	[String]			$Text
 	)
 	process
 	{
@@ -22,6 +22,7 @@ function New-CardSection
 		foreach ($item in $Fact)			{ $section.Fact 			+= $item }
 		foreach ($item in $Image)			{ $section.Image			+= $item }
 		foreach ($item in $PotentialAction)	{ $section.PotentialAction	+= $item }
+
 		if ($Title)			{	$section.title		= $Title		}
 		if ($StartGroup)	{	$section.startGroup	= $StartGroup	}
 		if ($HeroImage)		{	$section.heroImage	= $HeroImage	}
