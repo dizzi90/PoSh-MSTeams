@@ -8,7 +8,7 @@ function New-CardSection
 		[Parameter()]	[PSCustomObject[]]	$Activity,
 		[Parameter()]	[PSCustomObject[]]	$Fact,
 		[Parameter()]	[PSCustomObject[]]	$Image,
-		[Parameter()]	[PSCustomObject[]]	$PotentialAction
+		[Parameter()]	[PSCustomObject[]]	$PotentialAction,
 		[Parameter()]	[String]			$Title,
 		[Parameter()]	[Switch]			$StartGroup,
 		[Parameter()]	[PSCustomObject]	$HeroImage,

@@ -24,7 +24,7 @@ function New-Card
 		$card.'@type'		= 'MessageCard'
 		$card.'@context'	= 'http://schema.org/extensions'
 
-		foreach ($Section in $Section)					{ $card.section			+= $Section			}
+		foreach ($Section in $Section)					{ $card.sections		+= $Section			}
 		foreach ($PotentialAction in $PotentialAction)	{ $card.potentialAction	+= $PotentialAction	}
 
 		if ($hideOriginalBody)	{ $card.hideOriginalBody	= $true			}

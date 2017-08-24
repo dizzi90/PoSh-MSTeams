@@ -44,9 +44,13 @@ function Send-TeamsCard
 			"Got response: $apiResponse" | Write-Error
 		}
 	}
+	catch [WebException]
+	{
+		Throw "API did not accept request."
+	}
 	catch
 	{ 
-		throw "Could not post to Teams. $error"
+		throw "Could not post to Teams. $($Error[0])"
 	}
 
 }
