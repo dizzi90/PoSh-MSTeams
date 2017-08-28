@@ -1,5 +1,7 @@
 # PoSh-MSTeams
 
+[![Join the chat at https://gitter.im/PoSh-MSTeams/Lobby](https://badges.gitter.im/PoSh-MSTeams/Lobby.svg)](https://gitter.im/PoSh-MSTeams/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![](https://ci.appveyor.com/api/projects/status/84dhac55bkcqs8ej)
 
