@@ -19,9 +19,9 @@ function New-CardSection
 		$section = @{}
 
 		foreach ($item in $Activity)		{ $section					+= $item }
-		foreach ($item in $Fact)			{ $section.Fact 			+= $item }
-		foreach ($item in $Image)			{ $section.Image			+= $item }
-		foreach ($item in $PotentialAction)	{ $section.PotentialAction	+= $item }
+		foreach ($item in $Fact)			{ $section.facts 			+= $item }
+		foreach ($item in $Image)			{ $section.image			+= $item }
+		foreach ($item in $PotentialAction)	{ $section.potentialAction	+= $item }
 
 		if ($Title)			{	$section.title		= $Title		}
 		if ($StartGroup)	{	$section.startGroup	= $StartGroup	}
