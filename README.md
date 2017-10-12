@@ -4,6 +4,7 @@
 
 ![](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![](https://ci.appveyor.com/api/projects/status/84dhac55bkcqs8ej)
+![](https://travis-ci.org/dizzi90/PoSh-MSTeams.svg?branch=master)
 
 
 ## Status: **alpha**
